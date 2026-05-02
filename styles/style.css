@@ -1,0 +1,105 @@
+/* VARIABLES DE COLOR */
+:root {
+    --bg-dark: #0f0f11;
+    --text-light: #f5f5f5;
+    --gold: #d4af37;
+    --gold-hover: #b5952f;
+}
+
+/* RESETEO BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    scroll-behavior: smooth;
+}
+
+/* NAVEGACIÓN */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(15, 15, 17, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    /* Efecto vidrio */
+}
+
+.logo {
+    height: 50px;
+    /* Ajusta este tamaño según sea necesario */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+.btn-reserva,
+.btn-gold {
+    background-color: var(--gold);
+    color: var(--bg-dark) !important;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600 !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-reserva:hover,
+.btn-gold:hover {
+    background-color: var(--gold-hover);
+    transform: scale(1.05);
+    /* Pequeña animación al pasar el ratón */
+}
+
+/* SECCIÓN PRINCIPAL (HERO) */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    /* Fondo temporal tipo gradiente. Luego lo reemplazaremos con el video de fondo si quieres */
+    background: radial-gradient(circle at center, #2a2200 0%, var(--bg-dark) 70%);
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
