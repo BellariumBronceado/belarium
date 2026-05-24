@@ -198,31 +198,6 @@
                         Agendar
                     </a>
                 </div>
-
-                <!-- Servicio 2: Bikini Tradicional -->
-                <div
-                    class="bg-neutral-900/50 backdrop-blur-sm border border-neutral-800 rounded-3xl p-8 md:p-10 text-center transition-all duration-300 hover:-translate-y-2 hover:border-gold hover:shadow-[0_0_30px_rgba(212,175,55,0.15)] group relative overflow-hidden">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-b from-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    </div>
-                    <h3
-                        class="text-2xl font-semibold text-white mb-2 group-hover:text-gold transition-colors relative z-10">
-                        Bikini Tradicional
-                    </h3>
-                    <h4
-                        class="text-md font-light text-white mb-2 group-hover:text-gold transition-colors relative z-10">
-                        Duración 30 minutos
-                    </h4>
-                    <p class="text-neutral-400 mb-6 text-sm uppercase tracking-widest relative z-10">Bronceado Clásico
-                    </p>
-                    <div class="text-5xl font-light text-gold mb-8 relative z-10">
-                        $24.990<span class="text-lg text-neutral-500 font-light">/sesión</span>
-                    </div>
-                    <a href="#agendar" onclick="mostrarCalendario('bikini')"
-                        class="inline-block w-full py-3 px-6 rounded-full border border-gold text-gold font-medium hover:bg-gold hover:text-dark transition-all duration-300 relative z-10">
-                        Agendar
-                    </a>
-                </div>
             </div>
         </div>
     </section>
@@ -330,28 +305,39 @@
             </p>
 
             <!-- Tabs para seleccionar el servicio -->
-            <div class="flex justify-center mb-8 bg-neutral-900 p-1 rounded-full border border-neutral-800 max-w-md mx-auto relative z-10">
-                <button id="tab-brasileno" onclick="mostrarCalendario('brasileno')" class="w-1/2 py-2 text-sm md:text-base rounded-full font-medium transition-all duration-300 bg-gold text-dark shadow-md">
+            <div
+                class="flex justify-center mb-8 bg-neutral-900 p-1 rounded-full border border-neutral-800 max-w-md mx-auto relative z-10">
+                <button id="tab-brasileno" onclick="mostrarCalendario('brasileno')"
+                    class="w-1/2 py-2 text-sm md:text-base rounded-full font-medium transition-all duration-300 bg-gold text-dark shadow-md">
                     Bronceado Brasileño
                 </button>
-                <button id="tab-bikini" onclick="mostrarCalendario('bikini')" class="w-1/2 py-2 text-sm md:text-base rounded-full font-medium text-neutral-400 hover:text-white transition-all duration-300">
+                <button id="tab-bikini" onclick="mostrarCalendario('bikini')"
+                    class="w-1/2 py-2 text-sm md:text-base rounded-full font-medium text-neutral-400 hover:text-white transition-all duration-300">
                     Bikini Tradicional
                 </button>
             </div>
 
             <!-- Contenedor Calendly Brasileño -->
-            <div id="cal-brasileno" class="w-full max-w-4xl mx-auto rounded-2xl overflow-hidden border border-neutral-800 shadow-[0_0_20px_rgba(212,175,55,0.05)] bg-neutral-900 block">
+            <div id="cal-brasileno"
+                class="w-full max-w-4xl mx-auto rounded-2xl overflow-hidden border border-neutral-800 shadow-[0_0_20px_rgba(212,175,55,0.05)] bg-neutral-900 block">
                 <!-- Calendly inline widget begin -->
-                <div class="calendly-inline-widget" data-url="https://calendly.com/bellarium206/bikini-tradicional-bronceado-clasico-clone?background_color=000000&text_color=ffffff&primary_color=ffe000" style="min-width:320px;height:700px;"></div>
-                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <div class="calendly-inline-widget"
+                    data-url="https://calendly.com/bellarium206/bikini-tradicional-bronceado-clasico-clone?background_color=000000&text_color=ffffff&primary_color=ffe000"
+                    style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                    async></script>
                 <!-- Calendly inline widget end -->
             </div>
 
             <!-- Contenedor Calendly Bikini -->
-            <div id="cal-bikini" class="w-full max-w-4xl mx-auto rounded-2xl overflow-hidden border border-neutral-800 shadow-[0_0_20px_rgba(212,175,55,0.05)] bg-neutral-900 hidden">
+            <div id="cal-bikini"
+                class="w-full max-w-4xl mx-auto rounded-2xl overflow-hidden border border-neutral-800 shadow-[0_0_20px_rgba(212,175,55,0.05)] bg-neutral-900 hidden">
                 <!-- Calendly inline widget begin -->
-                <div class="calendly-inline-widget" data-url="https://calendly.com/bellarium206/30min?background_color=0c0c0c&text_color=ffffff&primary_color=ffc900" style="min-width:320px;height:700px;"></div>
-                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <div class="calendly-inline-widget"
+                    data-url="https://calendly.com/bellarium206/30min?background_color=0c0c0c&text_color=ffffff&primary_color=ffc900"
+                    style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                    async></script>
                 <!-- Calendly inline widget end -->
             </div>
 
@@ -365,7 +351,7 @@
                     if (servicio === 'brasileno') {
                         btnBrasileno.classList.add('bg-gold', 'text-dark', 'shadow-md');
                         btnBrasileno.classList.remove('text-neutral-400', 'hover:text-white');
-                        
+
                         btnBikini.classList.remove('bg-gold', 'text-dark', 'shadow-md');
                         btnBikini.classList.add('text-neutral-400', 'hover:text-white');
 
@@ -376,7 +362,7 @@
                     } else {
                         btnBikini.classList.add('bg-gold', 'text-dark', 'shadow-md');
                         btnBikini.classList.remove('text-neutral-400', 'hover:text-white');
-                        
+
                         btnBrasileno.classList.remove('bg-gold', 'text-dark', 'shadow-md');
                         btnBrasileno.classList.add('text-neutral-400', 'hover:text-white');
 
@@ -401,7 +387,8 @@
         <p>&copy; 2026 Belarium. Todos los derechos reservados.</p>
         <p class="mt-4 text-base flex justify-center items-center gap-4">
             <!-- Instrucción: Reemplaza "#" con tu enlace de Instagram -->
-            <a href="https://www.instagram.com/bellarium.cl" target="_blank" class="text-gold hover:text-white transition-colors flex items-center gap-2">
+            <a href="https://www.instagram.com/bellarium.cl" target="_blank"
+                class="text-gold hover:text-white transition-colors flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                     class="bi bi-instagram" viewBox="0 0 16 16">
                     <path
